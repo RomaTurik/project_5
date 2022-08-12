@@ -1,3 +1,146 @@
 *{
 	box-sizing: border-box;
+
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+.maket{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+h1{
+	margin-top: 40px;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.text_logo{
+	font-style: italic;
+}
+.main_header{
+	overflow-x: hidden;
+	justify-content: space-between;
+	display: flex;
+	color: #fff;
+	background: #222;
+	padding: 10px 200px 30px 200px;
+}
+.market{
+	color: #F10E34;
+	position: relative;
+}
+.market:after{
+	content: url(pictures/Screenshot_1.png);
+	position: absolute;
+	transform: translate(8px, -35px);
+}
+.quick_links_main_ul{
+	display: flex;
+	justify-content: flex-end;
+}
+.quick_links_main_li + .quick_links_main_li{
+	margin-left: 20px;
+}
+.quick_links_main_li{
+	list-style-type: none;
+}
+.quick_links_main_li + .quick_links_main_li:before {
+	content: "|";
+	margin-right: 20px;
+}
+.search_bar{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin-top: 40px;
+}
+#search_input{
+	padding: 8px 350px 8px 20px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+.cart p{
+	margin: 2px 4px;
+}
+.cart{
+	margin-left: 60px;
+	position: relative;
+}
+.cart:before{
+	transform: translate(-45px, 0);
+	content: url(pictures/Screenshot_3.png);
+	position: absolute;
+	border-radius: 50%;
+	padding: 12px 12px 10px 10px;
+	background:  #F10E34;
+}
+#total{
+	font-size: 0.8em;
+	margin: 4px 0 0 5px;
+}
+.search_button{
+	background: #F10E34;
+	border: none;
+	transform: translate(-30px);
+	border-radius: 0 5px 5px 0;
+}
+.search_button:hover{
+	cursor: pointer;
+}
+.search_button img{
+	height: 26px;
+	transform: translate(0, 2px);
+}
+
+
+.navigation_bar_main{
+	overflow-x: hidden;
+	background: #F10E34;
+	padding: 5px 200px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+.categories_main{
+	display: flex;
+}
+.categories_main h2{
+	font-size: 1.4em;
+}
+.burger_span + .burger_span{
+	margin-top: 4px;
+}
+.burger-menu{
+	margin: 21px 30px 0 7px;
+}
+.burger_span{
+	position: relative;
+	display: block;
+	width: 25px;
+	height: 5px;
+	background: #fff;
+}
+.burger_span:before{
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+	transform: translate(-7px, -0.5px);
+}	
+.accortiment{
+	display: flex;
+	margin: 20px 50px 0 0;
+}
+.accortiment a{
+	font-size: 1.2em;
+}
+.accortiment a + a{
+	margin-left: 25px;
 }
